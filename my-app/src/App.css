@@ -1,0 +1,37 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.font-image {
+  margin: 0 -40px; /* 調整這裡的值來減少圖片之間的間距 */
+}
+
+.group-spacing {
+  margin-right: 100px; /* 調整這裡的值來增加組之間的間距 */
+}
