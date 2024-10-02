@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/UnaSecretWritingSystemTranslator/static/css/main.f1c52620.css",
+    "main.js": "/UnaSecretWritingSystemTranslator/static/js/main.c16de058.js",
+    "static/js/453.ed3810f9.chunk.js": "/UnaSecretWritingSystemTranslator/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/UnaSecretWritingSystemTranslator/index.html",
+    "main.f1c52620.css.map": "/UnaSecretWritingSystemTranslator/static/css/main.f1c52620.css.map",
+    "main.c16de058.js.map": "/UnaSecretWritingSystemTranslator/static/js/main.c16de058.js.map",
+    "453.ed3810f9.chunk.js.map": "/UnaSecretWritingSystemTranslator/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1c52620.css",
+    "static/js/main.c16de058.js"
+  ]
+}
