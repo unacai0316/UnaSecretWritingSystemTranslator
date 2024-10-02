@@ -61,18 +61,18 @@ const zhuyin2keyboard2 = (zhuyin) => {
 };
 
 const fontImageMap = {
-  '1': 'UnaSecretWritingSystemTranslator/images/1.png', 'q': 'UnaSecretWritingSystemTranslator/images/2.png', 'a': 'UnaSecretWritingSystemTranslator/images/3.png', 'z': 'UnaSecretWritingSystemTranslator/images/4.png',
-  '2': 'UnaSecretWritingSystemTranslator/images/5.png', 'w': 'UnaSecretWritingSystemTranslator/images/6.png', 's': 'UnaSecretWritingSystemTranslator/images/7.png', 'x': 'UnaSecretWritingSystemTranslator/images/8.png',
-  'e': 'UnaSecretWritingSystemTranslator/images/9.png', 'd': 'UnaSecretWritingSystemTranslator/images/10.png', 'c': 'UnaSecretWritingSystemTranslator/images/11.png',
-  'r': 'UnaSecretWritingSystemTranslator/images/12.png', 'f': 'UnaSecretWritingSystemTranslator/images/13.png', 'v': 'UnaSecretWritingSystemTranslator/images/14.png',
-  '5': 'UnaSecretWritingSystemTranslator/images/15.png', 't': 'UnaSecretWritingSystemTranslator/images/16.png', 'g': 'UnaSecretWritingSystemTranslator/images/17.png', 'b': 'UnaSecretWritingSystemTranslator/images/18.png',
-  'y': 'UnaSecretWritingSystemTranslator/images/19.png', 'h': 'UnaSecretWritingSystemTranslator/images/20.png', 'n': 'UnaSecretWritingSystemTranslator/images/21.png',
-  'u': 'UnaSecretWritingSystemTranslator/images/22.png', 'j': 'UnaSecretWritingSystemTranslator/images/23.png', 'm': 'UnaSecretWritingSystemTranslator/images/24.png',
-  '8': 'UnaSecretWritingSystemTranslator/images/25.png', 'i': 'UnaSecretWritingSystemTranslator/images/26.png', 'k': 'UnaSecretWritingSystemTranslator/images/27.png', ',': 'UnaSecretWritingSystemTranslator/images/28.png',
-  '9': 'UnaSecretWritingSystemTranslator/images/29.png', 'o': 'UnaSecretWritingSystemTranslator/images/30.png', 'l': 'UnaSecretWritingSystemTranslator/images/31.png', '.': 'UnaSecretWritingSystemTranslator/images/32.png',
-  '0': 'UnaSecretWritingSystemTranslator/images/33.png', 'p': 'UnaSecretWritingSystemTranslator/images/34.png', ';': 'UnaSecretWritingSystemTranslator/images/35.png', '/': 'UnaSecretWritingSystemTranslator/images/36.png',
-  '-': 'UnaSecretWritingSystemTranslator/images/37.png',
-  '6': 'UnaSecretWritingSystemTranslator/images/38.png', '3': 'UnaSecretWritingSystemTranslator/images/39.png', '4': 'UnaSecretWritingSystemTranslator/images/40.png', '7': 'UnaSecretWritingSystemTranslator/images/41.png'
+  '1': '/UnaSecretWritingSystemTranslator/images/1.png', 'q': '/UnaSecretWritingSystemTranslator/images/2.png', 'a': '/UnaSecretWritingSystemTranslator/images/3.png', 'z': '/UnaSecretWritingSystemTranslator/images/4.png',
+  '2': '/UnaSecretWritingSystemTranslator/images/5.png', 'w': '/UnaSecretWritingSystemTranslator/images/6.png', 's': '/UnaSecretWritingSystemTranslator/images/7.png', 'x': '/UnaSecretWritingSystemTranslator/images/8.png',
+  'e': '/UnaSecretWritingSystemTranslator/images/9.png', 'd': '/UnaSecretWritingSystemTranslator/images/10.png', 'c': '/UnaSecretWritingSystemTranslator/images/11.png',
+  'r': '/UnaSecretWritingSystemTranslator/images/12.png', 'f': '/UnaSecretWritingSystemTranslator/images/13.png', 'v': '/UnaSecretWritingSystemTranslator/images/14.png',
+  '5': '/UnaSecretWritingSystemTranslator/images/15.png', 't': '/UnaSecretWritingSystemTranslator/images/16.png', 'g': '/UnaSecretWritingSystemTranslator/images/17.png', 'b': '/UnaSecretWritingSystemTranslator/images/18.png',
+  'y': '/UnaSecretWritingSystemTranslator/images/19.png', 'h': '/UnaSecretWritingSystemTranslator/images/20.png', 'n': '/UnaSecretWritingSystemTranslator/images/21.png',
+  'u': '/UnaSecretWritingSystemTranslator/images/22.png', 'j': '/UnaSecretWritingSystemTranslator/images/23.png', 'm': '/UnaSecretWritingSystemTranslator/images/24.png',
+  '8': '/UnaSecretWritingSystemTranslator/images/25.png', 'i': '/UnaSecretWritingSystemTranslator/images/26.png', 'k': '/UnaSecretWritingSystemTranslator/images/27.png', ',': '/UnaSecretWritingSystemTranslator/images/28.png',
+  '9': '/UnaSecretWritingSystemTranslator/images/29.png', 'o': '/UnaSecretWritingSystemTranslator/images/30.png', 'l': '/UnaSecretWritingSystemTranslator/images/31.png', '.': '/UnaSecretWritingSystemTranslator/images/32.png',
+  '0': '/UnaSecretWritingSystemTranslator/images/33.png', 'p': '/UnaSecretWritingSystemTranslator/images/34.png', ';': '/UnaSecretWritingSystemTranslator/images/35.png', '/': '/UnaSecretWritingSystemTranslator/images/36.png',
+  '-': '/UnaSecretWritingSystemTranslator/images/37.png',
+  '6': '/UnaSecretWritingSystemTranslator/images/38.png', '3': '/UnaSecretWritingSystemTranslator/images/39.png', '4': '/UnaSecretWritingSystemTranslator/images/40.png', '7': '/UnaSecretWritingSystemTranslator/images/41.png'
 };
 
 const TranslationEncryption = () => {
