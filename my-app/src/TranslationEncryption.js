@@ -77,7 +77,9 @@ const fontImageMap = {
 
 const TranslationEncryption = () => {
   const [input, setInput] = useState('');
-  const [result, setResult] = useState('');
+  const [translated, setTranslated] = useState(''); // 儲存翻譯成中文的結果
+  const [zhuyin, setZhuyin] = useState(''); // 儲存注音結果
+  const [encrypted, setEncrypted] = useState(''); // 儲存加密結果
   const [error, setError] = useState('');
 
   const handleTranslate = async () => {
@@ -86,15 +88,20 @@ const TranslationEncryption = () => {
       const chinese = await translateAPI(input);
       const zhuyin = chinese2zhuyin(chinese);
       const encrypted = zhuyin2keyboard2(zhuyin);
-      setResult(`in Chinese(Traditional)：${chinese}\nin Bopompho：${zhuyin}\nencrypted：${encrypted}`);
+
+      setTranslated(chinese);
+      setZhuyin(zhuyin);
+      setEncrypted(encrypted);
     } catch (error) {
       setError(`轉換過程中出現錯誤: ${error.message}`);
-      setResult('');
+      setTranslated('');
+      setZhuyin('');
+      setEncrypted('');
     }
   };
 
-  const renderEncryptedImages = (encrypted) => {
-    return encrypted.split('').map((char, index) => (
+  const renderEncryptedImages = (encryptedText) => {
+    return encryptedText.split('').map((char, index) => (
       <React.Fragment key={index}>
         {char === ' ' ? (
           <span className="group-spacing"></span>
@@ -104,7 +111,6 @@ const TranslationEncryption = () => {
       </React.Fragment>
     ));
   };
-
 
   return (
     <div className="p-4 bg-gray-100 rounded-lg">
@@ -125,16 +131,19 @@ const TranslationEncryption = () => {
         </button>
       </div>
       {error && <p className="text-red-500 mt-2">{error}</p>}
-      {result && (
+      {(translated || zhuyin || encrypted) && (
         <div className="mt-4 p-2 bg-white rounded limited-width mb-4">
-        <pre>{result}</pre>
-        <div className="mt-2 p-4 bg-white rounded limited-width">
-          {renderEncryptedImages(result.split('encrypted：')[1])}
+          <pre>in Chinese(Traditional)：{translated}</pre>
+          <pre>in ㄅㄆㄇㄈ：{zhuyin}</pre>
+          <pre>encrypted：{encrypted}</pre>
+          <div className="mt-2 p-4 bg-white rounded limited-width">
+            {renderEncryptedImages(encrypted)}
+          </div>
         </div>
-      </div>
       )}
     </div>
   );
 };
+
 
 export default TranslationEncryption;

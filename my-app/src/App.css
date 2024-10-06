@@ -78,9 +78,8 @@ button:hover {
   margin: 0 auto; /* 使其居中 */
 }
 
-div pre {
-  margin: 0 !important; /* 移除 margin */
-  padding: 0 !important; /* 移除 padding */
+pre {
+  color: #0037A0; /* 設置文字顏色為深藍色 */
 }
 
 .mb-4 {
