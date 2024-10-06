@@ -85,3 +85,17 @@ pre {
 .mb-4 {
   margin-bottom: 20px; /* 增加底部間距 */
 }
+
+.download-button {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #2563eb;
+}
+

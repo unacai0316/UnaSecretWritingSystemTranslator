@@ -9,6 +9,7 @@
     "assert": "^2.1.0",
     "axios": "^1.7.7",
     "hanzi-to-zhuyin": "^1.7.0",
+    "html2canvas": "^1.4.1",
     "path-browserify": "^1.0.1",
     "pinyin-pro": "^3.25.0",
     "pinyin-zhuyin": "^1.0.4",

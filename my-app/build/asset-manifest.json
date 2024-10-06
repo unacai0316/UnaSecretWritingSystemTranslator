@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/UnaSecretWritingSystemTranslator/static/css/main.c08055c0.css",
-    "main.js": "/UnaSecretWritingSystemTranslator/static/js/main.5a15aa49.js",
+    "main.css": "/UnaSecretWritingSystemTranslator/static/css/main.27ecfd01.css",
+    "main.js": "/UnaSecretWritingSystemTranslator/static/js/main.d1170b84.js",
     "static/js/453.ed3810f9.chunk.js": "/UnaSecretWritingSystemTranslator/static/js/453.ed3810f9.chunk.js",
     "index.html": "/UnaSecretWritingSystemTranslator/index.html",
-    "main.c08055c0.css.map": "/UnaSecretWritingSystemTranslator/static/css/main.c08055c0.css.map",
-    "main.5a15aa49.js.map": "/UnaSecretWritingSystemTranslator/static/js/main.5a15aa49.js.map",
+    "main.27ecfd01.css.map": "/UnaSecretWritingSystemTranslator/static/css/main.27ecfd01.css.map",
+    "main.d1170b84.js.map": "/UnaSecretWritingSystemTranslator/static/js/main.d1170b84.js.map",
     "453.ed3810f9.chunk.js.map": "/UnaSecretWritingSystemTranslator/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c08055c0.css",
-    "static/js/main.5a15aa49.js"
+    "static/css/main.27ecfd01.css",
+    "static/js/main.d1170b84.js"
   ]
 }

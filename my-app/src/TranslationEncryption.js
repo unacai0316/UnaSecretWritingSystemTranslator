@@ -3,6 +3,8 @@ import axios from 'axios';
 import { pinyinToZhuyin } from 'pinyin-zhuyin';
 import { pinyin } from 'pinyin-pro';
 import './App.css';
+import html2canvas from 'html2canvas';
+
 
 const zhuyin2keyboard = {
   'ㄅ': '1', 'ㄆ': 'q', 'ㄇ': 'a', 'ㄈ': 'z',
@@ -112,6 +114,24 @@ const TranslationEncryption = () => {
     ));
   };
 
+  // 下載包含加密圖片的 div 的圖片
+  const downloadEncryptedImage = () => {
+    const element = document.querySelector('.mt-2'); // 獲取加密圖片的 div
+  
+    if (element) {
+      html2canvas(element).then((canvas) => {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png'); // 將 div 轉換為 PNG 圖片
+        link.download = 'encrypted.png'; // 設定下載的檔名
+        link.click(); // 觸發下載
+      }).catch((error) => {
+        console.error('Error capturing the div:', error);
+      });
+    } else {
+      console.error('Element not found!');
+    }
+  };
+
   return (
     <div className="p-4 bg-gray-100 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">ㄅㄆㄇㄈ翻譯加密器</h2>
@@ -139,6 +159,12 @@ const TranslationEncryption = () => {
           <div className="mt-2 p-4 bg-white rounded limited-width">
             {renderEncryptedImages(encrypted)}
           </div>
+          <button
+            onClick={downloadEncryptedImage}
+            className="download-button mt-4"
+          >
+            Download Encrypted Image
+          </button>
         </div>
       )}
     </div>
