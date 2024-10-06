@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0037A0;
   padding: 20px;
   color: white;
 }
@@ -15,17 +15,16 @@ h1 {
 }
 
 button {
-  background-color: #61dafb;
+  background-color: #ff4ab4;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #21a1f1;
+  background-color: #F60021;
 }
 
 .font-image {
@@ -34,4 +33,56 @@ button:hover {
 
 .group-spacing {
   margin-right: 100px; /* 調整這裡的值來增加組之間的間距 */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 水平居中 */
+  margin-bottom: 10px; /* 增加容器底部的間距 */
+  gap: 20px; /* 增加物件之間的間隔 */
+}
+
+.input-field {
+  flex: 1;
+  max-width: 20%; /* 限制輸入欄的最大寬度 */
+  padding: 10px; /* 增加輸入欄的內邊距 */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* 增加字體大小 */
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.p-2 {
+  padding: 4px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.limited-width {
+  max-width: 800px; /* 限制白色背景的最大寬度 */
+  width: 80%;
+  margin: 0 auto; /* 使其居中 */
+}
+
+div pre {
+  margin: 0 !important; /* 移除 margin */
+  padding: 0 !important; /* 移除 padding */
+}
+
+.mb-4 {
+  margin-bottom: 20px; /* 增加底部間距 */
 }

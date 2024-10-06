@@ -108,28 +108,30 @@ const TranslationEncryption = () => {
 
   return (
     <div className="p-4 bg-gray-100 rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">翻譯加密器</h2>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        className="w-full p-2 mb-4 border rounded"
-        placeholder="please enter english words"
-      />
-      <button
-        onClick={handleTranslate}
-        className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
-      >
-        translate and encrypt
-      </button>
+      <h2 className="text-2xl font-bold mb-4">ㄅㄆㄇㄈ翻譯加密器</h2>
+      <div className="input-container">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="input-field"
+          placeholder="please enter english words"
+        />
+        <button
+          onClick={handleTranslate}
+          className="translate-button"
+        >
+          translate and encrypt
+        </button>
+      </div>
       {error && <p className="text-red-500 mt-2">{error}</p>}
       {result && (
-        <div className="mt-4 p-2 bg-white rounded">
-          <pre>{result}</pre>
-          <div className="mt-2">
-            {renderEncryptedImages(result.split('encrypted：')[1])}
-          </div>
+        <div className="mt-4 p-2 bg-white rounded limited-width mb-4">
+        <pre>{result}</pre>
+        <div className="mt-2 p-4 bg-white rounded limited-width">
+          {renderEncryptedImages(result.split('encrypted：')[1])}
         </div>
+      </div>
       )}
     </div>
   );
