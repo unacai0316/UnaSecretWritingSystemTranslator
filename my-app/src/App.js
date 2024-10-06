@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to the Translator App</h1>
+        <h1>ji3 encryptor</h1>
         <TranslationEncryption />
       </header>
     </div>
