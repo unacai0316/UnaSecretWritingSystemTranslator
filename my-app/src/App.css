@@ -103,3 +103,6 @@ pre {
   background-color: #2563eb;
 }
 
+.font-image {
+  mix-blend-mode: darken; /* 設置混合模式為 screen */
+}
